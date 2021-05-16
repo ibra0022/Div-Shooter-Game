@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Div-Shooter-Game.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="board">
+      <div id="boss-blood"></div>
+      <div id="score">Score: 30</div>
+      <div id="misses">misses: 20</div>
+      <div id="difficulty">
+        <p>Difficulty:</p>
+        <input
+          type="radio"
+          id="easy"
+          name="difficulty"
+          value="easy"
+          onclick="checkDifficulty(0);"
+          checked
+        />
+        <label for="easy">Easy</label><br />
+        <input
+          type="radio"
+          id="hard"
+          name="difficulty"
+          value="hard"
+          onclick="checkDifficulty(1);"
+        />
+        <label for="hard">Hard</label><br />
+      </div>
+      <div id="game-over">Game Over!</div>
+      <button id="play-again" onclick="playAgain();">Play Again</button>
+    </div>
+    <div id="continer">
+      <div id="player"></div>
+    </div>
+
+    <script src="Div-Shooter-Game.js"></script>
+  </body>
+</html>
